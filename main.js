@@ -18,29 +18,43 @@ function isValidEmail(str) {
   //console.log(str + (str[str.indexOf('@') -1] + '@codeimmersives.com'))
   if (str[0] !== '@' && str.endsWith(`@codeimmersives.com`) ) {
     return true
-  } else   
-  {
+  } else {
     return false
   }
    
 }
 
 function isValidPassword(str) {
-  if (str >=8   )  {
+  if (str.length >= 8 && str.toUpperCase() !== str && str.toLowerCase() !== str  )  {
     return true
-  } else {
+  } else  {  
     return false
   }
 
 }
 
 function isRegisteredUser(str) {
+  if (str === user1 || str === user2 || str === user3)
+  { return true} else {
+    return false
+  }
 
 }
 
-function passwordMatches(str) {
+function passwordMatches(str, str2) { 
+  if (str === user1 && str2 ===password1) {
+    return true
+  }
+  if (str === user2 && str2 === password2) {
+    return true
+  } 
+  if (str === user3 && str2 ===password3) {
+    return true} else {
+      return false
+    }
+  }
 
-}
+
 
 
 
