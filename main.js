@@ -14,7 +14,33 @@ const password3 = 'like a BOSS';
 // **YOUR** code below. Pass those tests!
 
 
+function isValidEmail(str) {
+  //console.log(str + (str[str.indexOf('@') -1] + '@codeimmersives.com'))
+  if (str[0] !== '@' && str.endsWith(`@codeimmersives.com`) ) {
+    return true
+  } else   
+  {
+    return false
+  }
+   
+}
 
+function isValidPassword(str) {
+  if (str >=8   )  {
+    return true
+  } else {
+    return false
+  }
+
+}
+
+function isRegisteredUser(str) {
+
+}
+
+function passwordMatches(str) {
+
+}
 
 
 
